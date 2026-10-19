@@ -1,0 +1,13 @@
+<style>
+nav a {color:gainsboro;background-color:goldenrod;text-decoration:none;padding:5px;}
+a {color:gainsboro;background-color:goldenrod;text-decoration:none;padding:5px;}
+a:visited {color:gainsboro;background-color:goldenrod;text-decoration:none;}
+a:link {color:gainsboro;background-color:goldenrod;text-decoration:none;}
+a:hover {background-color:gainsboro;color:goldenrod;text-decoration:none;}
+img {display:block;margin-left:auto;margin-right:auto;height:200px;}
+body {text-align:center;background-color:gainsboro;}
+h1 {color:goldenrod;list-style:none;}
+h2 {color:goldenrod;list-style:none;}
+ul {color:goldenrod;list-style:none;}
+li {font-size:125%;font-family:"Comic Sans MS", cursive, sans-serif;}
+</style>
