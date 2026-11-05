@@ -4,22 +4,17 @@
   box-sizing: border-box;
 }
 
+/* NAV */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #222;
   padding: 1rem 2rem;
-  color: white;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 1rem 2rem;
-  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -38,17 +33,26 @@
   transition: color 0.3s;
 }
 
+.nav-links.social {
+  display: flex;
+  flex: 2;
+  border-color: red;
+  list-style: none;
+}
+
+/* TEXT */
+
 a {
     text-decoration: none;
 }
 
 .flex-container {
-  display: flex; /* Makes the children align horizontally */
-  gap: 20px;     /* Adds a 20px space between the boxes */
+  display: flex;
+  gap: 20px;
 }
 
 .box {
-  flex: 1;       /* Optional: Forces both boxes to share width equally */
+  flex: 1;
   background-color: lightblue;
   padding: 20px;
 }
@@ -61,6 +65,15 @@ h1, h3, p {
   color: #ffffff;
 }
 
+.color1 {
+  color: #cf0;
+}
+
+.color2 {
+  color: #0fe;
+}
+
+/* TABS */
 .tab-container {
   max-width: 1400px;
   margin: 20px auto;
@@ -78,9 +91,11 @@ h1, h3, p {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
+  color: white;
 }
 .tab-btn:hover {
   background-color: #f0f0f0;
+  color: blue;
 }
 .tab-btn.active {
   border-bottom: 3px solid #007BFF;
@@ -98,33 +113,46 @@ h1, h3, p {
   display: block;
 }
 
-.image-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 16px;
-      padding: 16px;
-    }
+/* GRID */
 
-    .grid-item {
-      overflow: hidden;
-      border-radius: 8px;
-    }
-
-    .image-grid img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      aspect-ratio: 1 / 1;
-      display: block;
-    }
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 8px;
+.grid-item {
+  overflow: hidden;
+  border-radius: 0px;
 }
-    
-.div1 {
-    grid-column: span 6 / span 6;
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+/* GRID TITLE */
+
+.grid-item.title {
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.image-grid.title img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  display: block;
+}
+
+.image-grid.title {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(200px, 1fr));
+  gap: 0px;
+  padding: 0px;
 }

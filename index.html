@@ -4,51 +4,90 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>k.o.by</title>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="icon" href="images/quasar painting.jpg">
-        <script src="home.js" defer></script>
+        <script src="index.js" defer></script>
     </head>
     <body>
         <nav class="navbar">
-        <a href="home.html"><h1>k.o.by</h1></a>
-        <div class="tab-buttons">
-            <button class="tab-btn active" data-tab="tab1">Tab 1</button>
-            <button class="tab-btn" data-tab="tab2">Tab 2</button>
-            <button class="tab-btn" data-tab="tab3">Tab 3</button>
-        </div>
-        <a href="me.html"><h1>me</h1></a></li>
+            <a href="index.html"><h1 class="color1">k.o<span class="color2">.by</span></h1></a>
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="tab1">home</button>
+                <button class="tab-btn" data-tab="tab2">websites</button>
+                <button class="tab-btn" data-tab="tab3">images</button>
+                <button class="tab-btn" data-tab="tab4">socials</button>
+            </div>
         </nav>
-        
+        <!--TABS-->
         <div class="tab-container">
         <div id="tab1" class="tab-content active">
-            <h3>Content Header 1</h3>
-            <p>This is the first tab panel content.</p>
-            <a href="predictions/home.html">a website i made in 2019</a><br>
-            <a href="space_zoo_escape.html">escape the space zoo</a>
-            <div class="image-grid">
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 1"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 2"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 3"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 4"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 5"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 6"></div>
+            <div class="image-grid title">
+            <div class="grid-item title"><img src="images/art study 26-1.png" alt="2026 1" draggable="false"></div>
+            <div class="grid-item title"><img src="images/art study 26-2.png" alt="2026 2" draggable="false"></div>
+            <div class="grid-item title"><img src="images/art study 26-3.png" alt="2026 3" draggable="false"></div>
+            <div class="grid-item title"><img src="images/art study 26-4.png" alt="2026 4" draggable="false"></div>
+            <div class="grid-item title"><img src="images/art study 26-5.png" alt="2026 5" draggable="false"></div>
+            <div class="grid-item title"><img src="images/art study 26-6.png" alt="2026 6" draggable="false"></div>
             </div>
         </div>
         <div id="tab2" class="tab-content">
-            <h3>Content Header 2</h3>
-            <p>This is the second tab panel content.</p>
-            <div class="parent">
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 1"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 2"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 3"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 4"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 5"></div>
-            <div class="grid-item"><img src="https://picsum.photos" alt="Image 6"></div>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <a href="space_zoo_escape.html"><p>space zoo escape</p>
+                    <img src="images/space zoo escape title card.gif" alt="space zoo escape" draggable="false"></a><br></div>
+                <div class="grid-item">
+                    <a href="predictions/home.html"><p>a website i made in 2019</p>
+                    <img src="images/predictions img.png" alt="predictions" draggable="false"></a><br></div>
+                <div class="grid-item"><img src="https://picsum.photos" alt="Image 3" draggable="false"></div>
+                <div class="grid-item"><img src="https://picsum.photos" alt="Image 4" draggable="false"></div>
+                <div class="grid-item"><img src="https://picsum.photos" alt="Image 5" draggable="false"></div>
+                <div class="grid-item"><img src="https://picsum.photos" alt="Image 6" draggable="false"></div>
             </div>
         </div>
         <div id="tab3" class="tab-content">
+            <div class="image-grid">
+                <div class="grid-item">
+                    <p>colorblindness</p>
+                    <img src="images/colorblindness.png" alt="space zoo escape" draggable="false"><br></div>
+                <div class="grid-item">
+                    <p>technique use</p>
+                    <img src="images/technique use.png" alt="predictions" draggable="false"><br></div>
+                <div class="grid-item">
+                    <p>visual anomaly</p>
+                    <img src="images/visual anomaly.png" alt="predictions" draggable="false"><br></div>
+                <div class="grid-item"><img src="https://picsum.photos" alt="Image 4" draggable="false"></div>
+                <div class="grid-item"><img src="https://picsum.photos" alt="Image 5" draggable="false"></div>
+                <div class="grid-item"><img src="https://picsum.photos" alt="Image 6" draggable="false"></div>
+            </div>
+        </div>
+        <div id="tab4" class="tab-content">
             <h3>Content Header 3</h3>
             <p>This is the third tab panel content.</p>
+            <div class="image-grid">
+                <div class="grid-item"><a href="https://github.com/k-o-by" target="_blank" rel="noopener noreferrer">
+                    <svg viewbox="0 0 16 16" width="20%" fill="currentColor">
+                        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.67-.88 3.67-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                    </svg></a></div>
+                <div class="grid-item"><a href="https://instagram.com/k.o.by" target="_blank" rel="noopener noreferrer">
+                    <svg viewbox="0 0 16 16" width="20%" fill="currentColor">
+                        <path d="M8,1.441c2.136,0,2.389.009,3.233.047a4.419,4.419,0,0,1,1.485.276,2.472,2.472,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.419,4.419,0,0,1,.276,1.485c.038.844.047,1.1.047,3.233s-.009,2.389-.047,3.233a4.419,4.419,0,0,1-.276,1.485,2.644,2.644,0,0,1-1.518,1.518,4.419,4.419,0,0,1-1.485.276c-.844.038-1.1.047-3.233.047s-2.389-.009-3.233-.047a4.419,4.419,0,0,1-1.485-.276,2.472,2.472,0,0,1-.92-.6,2.472,2.472,0,0,1-.6-.92,4.419,4.419,0,0,1-.276-1.485c-.038-.844-.047-1.1-.047-3.233s.009-2.389.047-3.233a4.419,4.419,0,0,1,.276-1.485,2.472,2.472,0,0,1,.6-.92,2.472,2.472,0,0,1,.92-.6,4.419,4.419,0,0,1,1.485-.276c.844-.038,1.1-.047,3.233-.047M8,0C5.827,0,5.555.009,4.7.048A5.868,5.868,0,0,0,2.76.42a3.908,3.908,0,0,0-1.417.923A3.908,3.908,0,0,0,.42,2.76,5.868,5.868,0,0,0,.048,4.7C.009,5.555,0,5.827,0,8s.009,2.445.048,3.3A5.868,5.868,0,0,0,.42,13.24a3.908,3.908,0,0,0,.923,1.417,3.908,3.908,0,0,0,1.417.923,5.868,5.868,0,0,0,1.942.372C5.555,15.991,5.827,16,8,16s2.445-.009,3.3-.048a5.868,5.868,0,0,0,1.942-.372,4.094,4.094,0,0,0,2.34-2.34,5.868,5.868,0,0,0,.372-1.942c.039-.853.048-1.125.048-3.3s-.009-2.445-.048-3.3A5.868,5.868,0,0,0,15.58,2.76a3.908,3.908,0,0,0-.923-1.417A3.908,3.908,0,0,0,13.24.42,5.868,5.868,0,0,0,11.3.048C10.445.009,10.173,0,8,0Z"></path>
+                        <path d="M8,3.892A4.108,4.108,0,1,0,12.108,8,4.108,4.108,0,0,0,8,3.892Zm0,6.775A2.667,2.667,0,1,1,10.667,8,2.667,2.667,0,0,1,8,10.667Z"></path>
+                        <circle cx="12.27" cy="3.73" fill="currentColor" r="0.96"></circle>
+                    </svg></a></div>
+                <div class="grid-item"><a href="https://pinterest.com/ko0oby" target="_blank" rel="noopener noreferrer">
+                    <svg viewbox="0 0 16 16" width="20%" fill="currentColor">
+                        <path d="M8 0a8 8 0 0 0-2.91 15.45c-.07-.65-.13-1.64.02-2.35.14-.64.93-3.95.93-3.95s-.24-.47-.24-1.17c0-1.1.64-1.92 1.44-1.92.68 0 1.01.51 1.01 1.12 0 .68-.43 1.7-.66 2.64-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.5 2.53-3.68 0-1.92-1.38-3.27-3.35-3.27-2.29 0-3.63 1.71-3.63 3.48 0 .69.26 1.43.6 1.84.07.08.08.15.06.23l-.22.9c-.04.15-.12.18-.28.1-1.07-.5-1.67-2.06-1.67-3.32 0-2.7 1.97-5.18 5.66-5.18 2.97 0 5.28 2.12 5.28 4.95 0 2.95-1.86 5.33-4.45 5.33-.87 0-1.69-.45-1.97-.98l-.54 2.05c-.2.76-.73 1.71-1.08 2.28A8 8 0 1 0 8 0z"/>
+                    </svg></a></div>
+                <div class="grid-item"><a href="https://k-o-by.itch.io" target="_blank" rel="noopener noreferrer">
+                    <svg viewbox="0 0 16 16" width="20%" fill="currentColor">
+                        <path fill="currentColor" d="M2 3v2h12V3H2zm0 3v7h12V6H2zm3 2h2v3H5V8zm4 0h2v3H9V8z"/>
+                    </svg></a></div>
+                <div class="grid-item"><a href="https://k-o-by.itch.io" target="_blank" rel="noopener noreferrer">
+                    <a href="https://youtube.com/@k.o.b.y" target="_blank" rel="noopener noreferrer">
+                    <svg viewbox="0 0 16 16" width="20%" fill="currentColor">
+                        <path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z"></path>
+                    </svg></a>
+                </div>
             </div>
         </div>
     </body>
