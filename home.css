@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-container {
+  display: flex; /* Makes the children align horizontally */
+  gap: 20px;     /* Adds a 20px space between the boxes */
+}
+
+.box {
+  flex: 1;       /* Optional: Forces both boxes to share width equally */
+  background-color: lightblue;
+  padding: 20px;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+h1, h3, p {
+  color: #ffffff;
+}
+
+.tab-container {
+  max-width: 1400px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.tab-btn:hover {
+  background-color: #f0f0f0;
+}
+.tab-btn.active {
+  border-bottom: 3px solid #007BFF;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+.image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .grid-item {
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      display: block;
+    }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 6 / span 6;
+}
