@@ -16,3 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.querySelectorAll('img').forEach(el => {
+    el.setAttribute('draggable', 'false');
+    el.setAttribute('oncontextmenu', 'return false;');
+});

@@ -36,25 +36,17 @@
 .nav-links.social {
   display: flex;
   flex: 2;
-  border-color: red;
   list-style: none;
 }
 
 /* TEXT */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.flex-container {
-  display: flex;
-  gap: 20px;
-}
-
-.box {
-  flex: 1;
-  background-color: lightblue;
-  padding: 20px;
+svg path, circle {
+  fill: #fff;
 }
 
 body {
@@ -155,4 +147,17 @@ h1, h3, p {
   grid-template-columns: repeat(6, minmax(200px, 1fr));
   gap: 0px;
   padding: 0px;
+}
+
+/* BOXES */
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  background-color: lightblue;
+  padding: 20px;
 }
