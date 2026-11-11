@@ -98,9 +98,9 @@ h1, h3, p {
 .tab-content {
   display: none;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-top: none;
+  border: none;
 }
+
 .tab-content.active {
   display: block;
 }
