@@ -5,62 +5,101 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>k.o.by</title>
         <link rel="stylesheet" href="index.css">
-        <link rel="icon" href="images/quasar painting.jpg">
+        <link rel="icon" href="media/quasar painting.jpg">
         <script src="index.js" defer></script>
     </head>
     <body>
         <nav class="navbar">
             <a href="index.html"><h1 class="color1">k.o<span class="color2">.by</span></h1></a>
-            <div class="tab-buttons">
-                <button class="tab-btn active" data-tab="tab1">home</button>
-                <button class="tab-btn" data-tab="tab2">websites</button>
-                <button class="tab-btn" data-tab="tab3">images</button>
-                <button class="tab-btn" data-tab="tab4">socials</button>
+            <div class="tabs">
+                <button class="tab-btn" data-target="tab1">home</button>
+                <button class="tab-btn" data-target="tab2">web</button>
+                <button class="tab-btn" data-target="tab3">graphic</button>
+                <button class="tab-btn" data-target="tab4">motion</button>
+                <button class="tab-btn" data-target="tab5">photo</button>
+                <button class="tab-btn" data-target="tab6">audio</button>
+                <button class="tab-btn" data-target="tab7">socials</button>
             </div>
         </nav>
         <!--TABS-->
         <div class="tab-container">
-        <div id="tab1" class="tab-content active">
-            <div class="image-grid title">
-            <div class="grid-item title"><img src="images/art study 26-1.png" alt="2026 1"></div>
-            <div class="grid-item title"><img src="images/art study 26-2.png" alt="2026 2"></div>
-            <div class="grid-item title"><img src="images/art study 26-3.png" alt="2026 3"></div>
-            <div class="grid-item title"><img src="images/art study 26-4.png" alt="2026 4"></div>
-            <div class="grid-item title"><img src="images/art study 26-5.png" alt="2026 5"></div>
-            <div class="grid-item title"><img src="images/art study 26-6.png" alt="2026 6"></div>
+        <div id="tab1" class="tab-content"> <!-- HOME -->
+            <div class="image-grid responsive-grid">
+            <div class="grid-item title"><img src="media/art study 26-1.png" alt="2026 1"></div>
+            <div class="grid-item title"><img src="media/art study 26-2.png" alt="2026 2"></div>
+            <div class="grid-item title"><img src="media/art study 26-3.png" alt="2026 3"></div>
+            <div class="grid-item title"><img src="media/art study 26-4.png" alt="2026 4"></div>
+            <div class="grid-item title"><img src="media/art study 26-5.png" alt="2026 5"></div>
+            <div class="grid-item title"><img src="media/art study 26-6.png" alt="2026 6"></div>
+            </div>
+            <br>
+            <div>
+                <p id="image-count">0</p>
             </div>
         </div>
-        <div id="tab2" class="tab-content">
+        <div id="tab2" class="tab-content"> <!-- WEB -->
             <div class="image-grid">
-                <div class="grid-item">
-                    <a href="space_zoo_escape.html"><p>space zoo escape (2026)</p>
-                    <img src="images/space zoo escape title card.gif" alt="space zoo escape" draggable="false"></a><br></div>
-                <div class="grid-item">
-                    <a href="predictions/home.html"><p>2020s predictions (2019)</p>
-                    <img src="images/predictions img.png" alt="predictions" draggable="false"></a><br></div>
-                <div class="grid-item"><img src="https://picsum.photos" alt="Image 3" draggable="false"></div>
-                <div class="grid-item"><img src="https://picsum.photos" alt="Image 4" draggable="false"></div>
-                <div class="grid-item"><img src="https://picsum.photos" alt="Image 5" draggable="false"></div>
-                <div class="grid-item"><img src="https://picsum.photos" alt="Image 6" draggable="false"></div>
+                <div class="grid-item image-zoom">
+                    <a href="space_zoo_escape.html"> 
+                    <img src="media/space zoo escape title card.gif" alt="space zoo escape"></a></div>
+                <div class="grid-item image-zoom">
+                    <a href="predictions/home.html">
+                    <img src="media/predictions img.png" alt="predictions"></a><br></div>
             </div>
         </div>
-        <div id="tab3" class="tab-content">
+        <div id="tab3" class="tab-content"> <!-- GRAPHIC -->
             <div class="image-grid">
-                <div class="grid-item">
-                    <p>colorblindness (2026)</p>
-                    <img src="images/colorblindness.png" alt="space zoo escape" draggable="false"><br></div>
-                <div class="grid-item">
-                    <p>technique use (2026)</p>
-                    <img src="images/technique use.png" alt="predictions" draggable="false"><br></div>
-                <div class="grid-item">
-                    <p>visual anomaly (2026)</p>
-                    <img src="images/visual anomaly.png" alt="predictions" draggable="false"><br></div>
-                <div class="grid-item"><img src="https://picsum.photos" alt="Image 4" draggable="false"></div>
-                <div class="grid-item"><img src="https://picsum.photos" alt="Image 5" draggable="false"></div>
-                <div class="grid-item"><img src="https://picsum.photos" alt="Image 6" draggable="false"></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/colorblindness.png" alt="space zoo escape"><br></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/technique use.png" alt="predictions"><br></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/visual anomaly.png" alt="predictions"><br></div>
             </div>
         </div>
-        <div id="tab4" class="tab-content">
+        <div id="tab4" class="tab-content"> <!-- MOTION -->
+            <div class="image-grid">
+                <div class="grid-item image-zoom">
+                    <img src="media/electric eel.gif" alt="electric eel"><br></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/black-dragonfish.gif" alt="black dragonfish"><br></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/barreleye.gif" alt="barreleye"><br></div>
+            </div>
+        </div>
+        <div id="tab5" class="tab-content"> <!-- PHOTO -->
+            <div class="image-grid">
+                <div class="grid-item image-zoom">
+                    <img src="media/sky1.jpg" alt="sky1"><br></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/sky2.jpg" alt="sky2"><br></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/sky3.jpg" alt="sky3"><br></div>
+            </div>
+        </div>
+        <div id="tab6" class="tab-content"> <!-- AUDIO -->
+            <div class="image-grid">
+                <div class="grid-item image-zoom">
+                    <img src="media/o...o.gif" alt="o...o">
+                    <audio controls>
+                    <source src="media/o...o - k.o.by.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/colorblindness.png" alt="rough days">
+                    <audio controls>
+                    <source src="media/rough days - k.o.by.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio></div>
+                <div class="grid-item image-zoom">
+                    <img src="media/colorblindness.png" alt="abysmall">
+                    <audio controls>
+                    <source src="media/abysmall - k.o.by.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio></div>
+            </div>
+        </div>
+        <div id="tab7" class="tab-content"> <!-- SOCIAL -->
             <div class="image-grid">
                 <div class="grid-item"><a href="https://github.com/k-o-by" target="_blank" rel="noopener noreferrer">
                     <svg viewbox="0 0 16 16" width="40%">
@@ -74,14 +113,13 @@
                     </svg></a></div>
                 <div class="grid-item"><a href="https://pinterest.com/ko0oby" target="_blank" rel="noopener noreferrer">
                     <svg viewbox="0 0 16 16" width="40%">
-                        <path d="M8 0a8 8 0 0 0-2.91 15.45c-.07-.65-.13-1.64.02-2.35.14-.64.93-3.95.93-3.95s-.24-.47-.24-1.17c0-1.1.64-1.92 1.44-1.92.68 0 1.01.51 1.01 1.12 0 .68-.43 1.7-.66 2.64-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.5 2.53-3.68 0-1.92-1.38-3.27-3.35-3.27-2.29 0-3.63 1.71-3.63 3.48 0 .69.26 1.43.6 1.84.07.08.08.15.06.23l-.22.9c-.04.15-.12.18-.28.1-1.07-.5-1.67-2.06-1.67-3.32 0-2.7 1.97-5.18 5.66-5.18 2.97 0 5.28 2.12 5.28 4.95 0 2.95-1.86 5.33-4.45 5.33-.87 0-1.69-.45-1.97-.98l-.54 2.05c-.2.76-.73 1.71-1.08 2.28A8 8 0 1 0 8 0z"/>
+                        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
                     </svg></a></div>
                 <div class="grid-item"><a href="https://k-o-by.itch.io" target="_blank" rel="noopener noreferrer">
-                    <svg viewbox="0 0 16 16" width="40%">
-                        <path fill="currentColor" d="M2 3v2h12V3H2zm0 3v7h12V6H2zm3 2h2v3H5V8zm4 0h2v3H9V8z"/>
+                    <svg viewBox="0 0 512 512" width="40%">
+                        <path fill="currentColor" d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84c27.57 0 50.54-22.85 50.54-50c0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50c0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50c23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77m132.32 134.39c-22 38.4-77.9 38.71-99.85.25c-13.17 23.14-43.17 32.07-56 27.66c-3.87 40.15-13.67 237.13 17.73 269.15c80 18.67 302.08 18.12 379.76 0c31.65-32.27 21.32-232 17.75-269.15c-12.92 4.44-42.88-4.6-56-27.66c-22 38.52-77.85 38.1-99.85-.24c-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a437 437 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45c17.26 62.15-5.52 63.67-33.95 63.73c-42.15-1.57-65.49-32.18-65.49-62.79c-39.25 6.43-101.93 8.79-155.55 0c0 30.61-23.34 61.22-65.49 62.79c-28.42-.06-51.2-1.58-33.94-63.73c18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16c11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z"/>
                     </svg></a></div>
-                <div class="grid-item"><a href="https://k-o-by.itch.io" target="_blank" rel="noopener noreferrer">
-                    <a href="https://youtube.com/@k.o.b.y" target="_blank" rel="noopener noreferrer">
+                        <a href="https://youtube.com/@k.o.b.y" target="_blank" rel="noopener noreferrer">
                     <svg viewbox="0 0 16 16" width="40%">
                         <path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z"></path>
                     </svg></a>
